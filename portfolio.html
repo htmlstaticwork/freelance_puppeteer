@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Portfolio · Puppeter</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+<div class="page-transition"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Puppeter</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem">Login</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="rtl-toggle" aria-label="Toggle RTL/LTR direction">
+        <span class="rtl-icon">⇄</span>
+        <span class="rtl-label">RTL</span>
+      </button>
+      <button class="theme-toggle">☀️</button>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Login</a>
+</div>
+
+<!-- HERO -->
+<section class="hero hero-portfolio" style="min-height:60vh">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="subtitle">Creative Work</span>
+    <h1 class="display-title">The <span class="accent-word">Portfolio</span></h1>
+    <p class="body-text">Showreels, character creations, behind-the-scenes journeys, and stage performances from two decades of work.</p>
+  </div>
+</section>
+
+<!-- SHOWREELS -->
+<section>
+  <div class="section-inner">
+    <span class="section-label reveal">Showreels</span>
+    <h2 class="section-title reveal">Stage & Screen</h2>
+
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="stage">Stage</button>
+      <button class="filter-btn" data-filter="tv">Film & TV</button>
+      <button class="filter-btn" data-filter="character">Characters</button>
+      <button class="filter-btn" data-filter="process">BTS Process</button>
+    </div>
+
+    <div class="showreel-grid">
+      <div class="showreel-item reveal" data-category="stage">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80" alt="Shadow & Light"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>Shadow & Light — Edinburgh Festival</h4>
+        </div>
+      </div>
+      <div class="showreel-item reveal" data-category="tv">
+        <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&q=80" alt="BBC Series"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>Dreamweavers — BBC Children's</h4>
+        </div>
+      </div>
+      <div class="showreel-item reveal" data-category="character">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Characters"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>The Menagerie — Character Suite</h4>
+        </div>
+      </div>
+      <div class="showreel-item reveal" data-category="process">
+        <img src="https://images.unsplash.com/photo-1499540633125-484965b60031?w=600&q=80" alt="Workshop"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>From Clay to Character</h4>
+        </div>
+      </div>
+      <div class="showreel-item reveal" data-category="stage">
+        <img src="https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=600&q=80" alt="Theater"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>The Paper King — Royal Theatre</h4>
+        </div>
+      </div>
+      <div class="showreel-item reveal" data-category="tv">
+        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=600&q=80" alt="Film"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>Whisper Collective — Short Film</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHARACTER GALLERY -->
+<section style="background:var(--card-bg)">
+  <div class="section-inner">
+    <span class="section-label reveal">Original Characters</span>
+    <h2 class="section-title reveal">The Cast</h2>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <div style="font-size:4rem;margin-bottom:1rem">🤡</div>
+        <h3>Mister Cinders</h3>
+        <p>A melancholic jester built from ash-grey felt and vintage buttons. Hero of the 'Shadow & Light' performances. 48cm rod puppet.</p>
+      </div>
+      <div class="card reveal">
+        <div style="font-size:4rem;margin-bottom:1rem">🦊</div>
+        <h3>The Copper Fox</h3>
+        <p>Animatronic foam-latex fox with servo-driven eyes and cable mouth. Star of the BBC Dreamweavers series. Radio-controlled.</p>
+      </div>
+      <div class="card reveal">
+        <div style="font-size:4rem;margin-bottom:1rem">👁️</div>
+        <h3>The Watcher</h3>
+        <p>A two-meter shadow puppet cut from lambskin leather, based on Javanese Wayang tradition. Used in international touring shows.</p>
+      </div>
+      <div class="card reveal">
+        <div style="font-size:4rem;margin-bottom:1rem">🌊</div>
+        <h3>Pelagic</h3>
+        <p>An undulating ocean creature operated by six performers. Constructed from silk, cane, and translucent resin — 4 meters long.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS SECTION -->
+<section>
+  <div class="section-inner">
+    <span class="section-label reveal">The Making Of</span>
+    <h2 class="section-title reveal">Creation Process</h2>
+    <div class="features-grid reveal">
+      <div class="feature-item">
+        <div class="feature-num">01</div>
+        <h3>Character Brief</h3>
+        <p>Deep research into story, psychology, and cultural context. Character sketches and personality documents are produced first.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">02</div>
+        <h3>Maquette</h3>
+        <p>A small-scale model is sculpted in oil-based clay to establish form, proportion, and character expression before full-size work begins.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">03</div>
+        <h3>Full Sculpt</h3>
+        <p>The final sculpture is produced in the chosen medium — carved foam, cast resin, or built-up latex over an armature.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">04</div>
+        <h3>Mechanism</h3>
+        <p>Internal rigging is designed and installed — strings, rods, cables, or servo systems depending on the puppet's performance requirements.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">05</div>
+        <h3>Finishing</h3>
+        <p>Painting, costuming, hair, and final detailing bring the character to its visual completion. Each step photographed for reference.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">06</div>
+        <h3>Rehearsal</h3>
+        <p>The puppeteer learns the character over weeks of rehearsal — finding its walk, voice, breath, and inner life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="section-inner">
+    <h2>Commission a Character</h2>
+    <p>Have a story that needs a face? Let's discuss your project and bring your vision to life.</p>
+    <a href="contact.html" class="btn btn-outline">Commission Now →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Puppeter</a>
+        <p>The art of giving voice to the voiceless — one carefully crafted character at a time.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon si-fb"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon si-ig"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon si-tw"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon si-li"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Live Performances</a></li>
+          <li><a href="#">Film & Television</a></li>
+          <li><a href="#">Custom Characters</a></li>
+          <li><a href="#">Workshops</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Puppeter · Marcus Vale. All rights reserved.</p>
+      <p>Designed with strings &amp; soul.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop">
+  <button class="modal-close">✕</button>
+  <div class="modal-video" style="display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Space Mono',monospace;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;">▶ Showreel Playing</div>
+</div>
+<button class="back-to-top">↑</button>
+<script src="main.js"></script>
+</body>
+</html>

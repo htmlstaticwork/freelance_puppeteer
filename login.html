@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Login · Puppeter</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+  body { cursor: none; }
+</style>
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Puppeter</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="register.html" class="btn btn-outline" style="padding:0.5rem 1.2rem;font-size:0.65rem;color:var(--text);border-color:var(--border)">Register</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="rtl-toggle" aria-label="Toggle direction">
+        <span class="rtl-icon">⇄</span>
+        <span class="rtl-label">RTL</span>
+      </button>
+      <button class="theme-toggle">☀️</button>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <a href="register.html">Register</a>
+</div>
+
+<!-- AUTH LAYOUT -->
+<div class="auth-page" style="padding-top:72px;">
+
+  <!-- LEFT VISUAL PANEL -->
+  <div class="auth-visual">
+    <div class="auth-visual-content anim-left">
+      <span class="subtitle" style="color:var(--accent);margin-bottom:1rem;display:block">Welcome Back</span>
+      <h2 class="display-title" style="font-size:clamp(2rem,4vw,3.2rem);color:var(--secondary)">
+        The Stage<br/>
+        <span style="color:var(--accent);font-style:italic">Awaits You</span>
+      </h2>
+      <p>Sign back in to manage your bookings, track commissions, and access exclusive behind-the-scenes content.</p>
+      <div class="auth-visual-quote">
+        <p>"Every puppet holds a secret — and only its maker knows the truth."</p>
+        <span>— Marcus Vale</span>
+      </div>
+
+      <!-- Decorative stat row -->
+      <div style="display:flex;gap:2rem;margin-top:2.5rem;">
+        <div style="text-align:center">
+          <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--accent)">34+</div>
+          <div style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,237,224,0.5);margin-top:0.2rem">Countries</div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--accent)">200+</div>
+          <div style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,237,224,0.5);margin-top:0.2rem">Characters</div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--accent)">12</div>
+          <div style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,237,224,0.5);margin-top:0.2rem">Awards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM PANEL -->
+  <div class="auth-panel anim-right">
+    <div class="auth-panel-inner">
+
+      <a href="index.html" class="auth-logo">Puppeter</a>
+
+      <h1 class="auth-heading">Sign In</h1>
+      <p class="auth-sub">
+        No account yet?
+        <a href="register.html">Create one free →</a>
+      </p>
+
+      <!-- Social Login -->
+      <div class="auth-socials" style="margin-bottom:0">
+        <button class="auth-social-btn">
+          <i class="fab fa-google" style="color:#EA4335"></i> Google
+        </button>
+        <button class="auth-social-btn">
+          <i class="fab fa-facebook-f" style="color:#1877F2"></i> Facebook
+        </button>
+        <button class="auth-social-btn">
+          <i class="fab fa-linkedin-in" style="color:#0A66C2"></i> LinkedIn
+        </button>
+      </div>
+
+      <div class="auth-divider">or continue with email</div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form" novalidate>
+
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input
+            type="email" id="login-email" name="email"
+            placeholder="marcus@puppeter.studio"
+            autocomplete="email" required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pw">Password</label>
+          <div class="auth-input-wrap">
+            <input
+              type="password" id="pw" name="password"
+              placeholder="••••••••"
+              autocomplete="current-password" required
+            />
+            <button type="button" class="toggle-pw" aria-label="Toggle password visibility">👁️</button>
+          </div>
+        </div>
+
+        <div class="auth-options">
+          <label class="auth-check">
+            <input type="checkbox" name="remember"/> Remember me
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="auth-btn">
+          <span>Sign In →</span>
+        </button>
+
+      </form>
+
+      <p class="auth-footer-note">
+        By signing in you agree to our
+        <a href="#">Terms of Service</a> and
+        <a href="#">Privacy Policy</a>.
+        Your data is safe with us.
+      </p>
+
+      <!-- Back link -->
+      <div style="margin-top:2rem;text-align:center">
+        <a href="index.html" style="font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text);opacity:0.5;text-decoration:none;transition:opacity 0.3s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.5">
+          ← Back to Site
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /auth-page -->
+
+<script src="main.js"></script>
+</body>
+</html>

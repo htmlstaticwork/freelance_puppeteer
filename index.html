@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Puppeter · The Art of Living Strings</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+<div class="page-transition"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Puppeter</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem">Login</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="rtl-toggle" aria-label="Toggle RTL/LTR direction">
+        <span class="rtl-icon">⇄</span>
+        <span class="rtl-label">RTL</span>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Login</a>
+</div>
+
+<!-- HERO -->
+<section class="hero hero-home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="subtitle">Master Puppeteer & Performance Artist</span>
+    <h1 class="display-title">
+      Where Strings
+      <span class="accent-word">Meet Soul</span>
+    </h1>
+    <p class="body-text">Crafting extraordinary puppet characters that blur the line between wood, fabric, and living emotion. Two decades of storytelling through the ancient art of puppetry.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="portfolio.html" class="btn btn-primary">View Showreels ↗</a>
+      <a href="about.html" class="btn btn-outline">My Journey</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <span class="section-label reveal">What I Offer</span>
+    <h2 class="section-title reveal">Crafting Magic<br/><em>One String at a Time</em></h2>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <div class="card-icon">🎭</div>
+        <h3>Live Performances</h3>
+        <p>Captivating stage shows for theatres, festivals, corporate events, and private celebrations. Every show is uniquely choreographed.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">📺</div>
+        <h3>Film & Television</h3>
+        <p>Professional puppetry for TV productions, advertisements, music videos, and feature films. Full technical crew available.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">✂️</div>
+        <h3>Custom Characters</h3>
+        <p>Bespoke puppet design and fabrication — from concept sketches to fully articulated, camera-ready characters for any brand or story.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🎓</div>
+        <h3>Workshops</h3>
+        <p>Immersive puppetry workshops for schools, universities, and studios. Learn construction, voice, movement, and character development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SNIPPET -->
+<section id="about" style="background:var(--card-bg)">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-image-wrapper reveal">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="The Puppeteer at work"/>
+      </div>
+      <div class="about-text">
+        <span class="section-label reveal">The Artisan</span>
+        <h2 class="section-title reveal">Twenty Years of<br/><em>Living Theater</em></h2>
+        <p class="reveal">I'm Marcus Vale, a master puppeteer who has dedicated his life to the ancient craft of bringing inanimate forms to life. From Javanese shadow puppets to complex foam-latex marionettes, every creation tells a story.</p>
+        <p class="reveal">My work has graced stages across 34 countries, earned 12 international awards, and touched millions through television and film — yet every performance begins with the same quiet ritual: listening to what the puppet wants to say.</p>
+        <div class="stat-row reveal">
+          <div class="stat">
+            <div class="stat-num" data-target="34" data-suffix="+">0+</div>
+            <div class="stat-label">Countries</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="200" data-suffix="+">0+</div>
+            <div class="stat-label">Characters</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="12">0</div>
+            <div class="stat-label">Awards</div>
+          </div>
+        </div>
+        <br/>
+        <a href="about.html" class="btn btn-primary reveal">Full Story →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES / HIGHLIGHTS -->
+<section id="features">
+  <div class="section-inner">
+    <span class="section-label reveal">Why Choose Puppeter</span>
+    <h2 class="section-title reveal" style="text-align:center">The Craft Behind<br/><em>Every Character</em></h2>
+    <div class="features-grid reveal">
+      <div class="feature-item">
+        <div class="feature-num">01</div>
+        <h3>Hand-Sculpted</h3>
+        <p>Every puppet is individually sculpted, cast, and painted by hand using traditional and contemporary materials.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">02</div>
+        <h3>Narrative First</h3>
+        <p>Characters are built from their stories outward — personality shapes physicality before a single tool is raised.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">03</div>
+        <h3>Technical Mastery</h3>
+        <p>Cable mechanisms, animatronics, and precision rod systems give each puppet an authentic, fluid presence.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">04</div>
+        <h3>Cultural Heritage</h3>
+        <p>Deep study of Wayang, Bunraku, Commedia, and shadow traditions informs every new creation's soul.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">05</div>
+        <h3>Collaborative</h3>
+        <p>Working closely with directors, writers, and clients to realise their vision through the language of puppetry.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">06</div>
+        <h3>Global Reach</h3>
+        <p>Performances and workshops delivered in 34 countries, with multilingual capability and cultural sensitivity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWREEL PREVIEW -->
+<section style="background:var(--card-bg)">
+  <div class="section-inner">
+    <span class="section-label reveal">Behind the Curtain</span>
+    <h2 class="section-title reveal">Recent Work</h2>
+    <div class="showreel-grid">
+      <div class="showreel-item reveal" data-category="stage">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80" alt="Shadow Theatre"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>Shadow & Light — Edinburgh</h4>
+        </div>
+      </div>
+      <div class="showreel-item reveal" data-category="tv">
+        <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&q=80" alt="TV Production"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>Dreamweavers — BBC Series</h4>
+        </div>
+      </div>
+      <div class="showreel-item reveal" data-category="character">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Character Creation"/>
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>Character Creation Process</h4>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem">
+      <a href="portfolio.html" class="btn btn-primary reveal">Full Portfolio →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <span class="section-label reveal">Voices</span>
+    <h2 class="section-title reveal" style="text-align:center">What They Say</h2>
+    <div class="cards-grid" style="margin-top:3rem">
+      <div class="testimonial-card reveal">
+        <div class="quote-mark">"</div>
+        <p>Marcus transformed our opening ceremony into something the audience will never forget. His characters felt more real than the humans on stage.</p>
+        <span class="author">— Sofia Reinholt, Edinburgh Festival Director</span>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="quote-mark">"</div>
+        <p>Working with Puppeter on our BBC series was a revelation. The technical precision combined with emotional depth is unparalleled in the industry.</p>
+        <span class="author">— James Whitmore, BBC Productions</span>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="quote-mark">"</div>
+        <p>Our custom mascot puppet has become the face of our brand. The craftsmanship, the personality — children and adults alike adore it.</p>
+        <span class="author">— Chen Li, Global Toy Co.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="section-inner">
+    <h2>Ready to Bring Your<br/>Story to Life?</h2>
+    <p>Whether it's a grand theatrical production or an intimate workshop — let's create something extraordinary together.</p>
+    <a href="contact.html" class="btn btn-outline">Start a Conversation →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Puppeter</a>
+        <p>The art of giving voice to the voiceless — one carefully crafted character at a time. Based in London, performing worldwide.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon si-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon si-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon si-tw" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon si-li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Live Performances</a></li>
+          <li><a href="#">Film & Television</a></li>
+          <li><a href="#">Custom Characters</a></li>
+          <li><a href="#">Workshops</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Puppeter · Marcus Vale. All rights reserved.</p>
+      <p>Designed with strings &amp; soul.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Video Modal -->
+<div class="modal-backdrop">
+  <button class="modal-close">✕</button>
+  <div class="modal-video" style="display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Space Mono',monospace;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;">▶ Showreel Preview</div>
+</div>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>

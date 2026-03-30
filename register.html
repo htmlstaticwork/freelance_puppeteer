@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Register · Puppeter</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Puppeter</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem">Login</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="rtl-toggle" aria-label="Toggle direction">
+        <span class="rtl-icon">⇄</span>
+        <span class="rtl-label">RTL</span>
+      </button>
+      <button class="theme-toggle">☀️</button>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Login</a>
+</div>
+
+<!-- AUTH LAYOUT -->
+<div class="auth-page" style="padding-top:72px;">
+
+  <!-- LEFT VISUAL PANEL -->
+  <div class="auth-visual" style="--hero-img:url('https://images.unsplash.com/photo-1499540633125-484965b60031?w=1200&q=80');background-image:url('https://images.unsplash.com/photo-1499540633125-484965b60031?w=1200&q=80')">
+    <div class="auth-visual-content anim-left">
+      <span class="subtitle" style="color:var(--accent);margin-bottom:1rem;display:block">Join the Studio</span>
+      <h2 class="display-title" style="font-size:clamp(2rem,4vw,3.2rem);color:var(--secondary)">
+        Begin Your<br/>
+        <span style="color:var(--accent);font-style:italic">Journey</span>
+      </h2>
+      <p>Create a free account to commission custom characters, book workshops, and follow the creation process from concept to performance.</p>
+
+      <div class="auth-visual-quote">
+        <p>"The puppet does not exist until someone believes in it enough to make it move."</p>
+        <span>— Marcus Vale</span>
+      </div>
+
+      <!-- What you get -->
+      <div style="margin-top:2.5rem;display:flex;flex-direction:column;gap:0.8rem;">
+        <div style="display:flex;align-items:center;gap:0.75rem;color:rgba(245,237,224,0.8);font-size:0.95rem;">
+          <span style="color:var(--accent);font-size:1rem;">✓</span> Access exclusive behind-the-scenes content
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;color:rgba(245,237,224,0.8);font-size:0.95rem;">
+          <span style="color:var(--accent);font-size:1rem;">✓</span> Commission custom puppet characters
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;color:rgba(245,237,224,0.8);font-size:0.95rem;">
+          <span style="color:var(--accent);font-size:1rem;">✓</span> Book workshops and live performances
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;color:rgba(245,237,224,0.8);font-size:0.95rem;">
+          <span style="color:var(--accent);font-size:1rem;">✓</span> Track your project from start to finish
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM PANEL -->
+  <div class="auth-panel anim-right">
+    <div class="auth-panel-inner">
+
+      <a href="index.html" class="auth-logo">Puppeter</a>
+
+      <!-- Progress Steps -->
+      <div class="auth-steps">
+        <div class="auth-step done" title="Account Info"></div>
+        <div class="auth-step active" title="Personal Details"></div>
+        <div class="auth-step" title="Preferences"></div>
+      </div>
+
+      <h1 class="auth-heading">Create Account</h1>
+      <p class="auth-sub">
+        Already have an account?
+        <a href="login.html">Sign in →</a>
+      </p>
+
+      <!-- Social Register -->
+      <div class="auth-socials" style="margin-bottom:0">
+        <button class="auth-social-btn">
+          <i class="fab fa-google" style="color:#EA4335"></i> Google
+        </button>
+        <button class="auth-social-btn">
+          <i class="fab fa-facebook-f" style="color:#1877F2"></i> Facebook
+        </button>
+        <button class="auth-social-btn">
+          <i class="fab fa-linkedin-in" style="color:#0A66C2"></i> LinkedIn
+        </button>
+      </div>
+
+      <div class="auth-divider">or register with email</div>
+
+      <!-- Register Form -->
+      <form id="register-form" class="auth-form" novalidate>
+
+        <!-- Name Row -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div class="form-group">
+            <label for="reg-fname">First Name</label>
+            <input type="text" id="reg-fname" name="fname" placeholder="Marcus" required/>
+          </div>
+          <div class="form-group">
+            <label for="reg-lname">Last Name</label>
+            <input type="text" id="reg-lname" name="lname" placeholder="Vale" required/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" name="email" placeholder="you@example.com" autocomplete="email" required/>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-role">I am a…</label>
+          <select id="reg-role" name="role" style="width:100%;padding:0.85rem 1.1rem;background:var(--card-bg);border:1px solid var(--border);color:var(--text);font-family:'Cormorant Garamond',serif;font-size:1.05rem;outline:none;transition:border-color 0.4s;">
+            <option value="">Select your role…</option>
+            <option>Theatre Director / Producer</option>
+            <option>Film / TV Production Company</option>
+            <option>Brand / Corporate Client</option>
+            <option>Educator / School</option>
+            <option>Private Collector</option>
+            <option>Aspiring Puppeteer</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pw">Password</label>
+          <div class="auth-input-wrap">
+            <input type="password" id="pw" name="password" placeholder="Create a strong password" autocomplete="new-password" required/>
+            <button type="button" class="toggle-pw" aria-label="Toggle password visibility">👁️</button>
+          </div>
+          <div class="strength-bar">
+            <div class="strength-track"><div class="strength-fill"></div></div>
+            <span class="strength-label"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pw2">Confirm Password</label>
+          <div class="auth-input-wrap">
+            <input type="password" id="pw2" name="password2" placeholder="Repeat password" autocomplete="new-password" required/>
+            <button type="button" class="toggle-pw" aria-label="Toggle password visibility">👁️</button>
+          </div>
+        </div>
+
+        <div style="margin-bottom:1.5rem">
+          <label class="auth-check" style="display:flex;align-items:flex-start;gap:0.5rem;font-size:0.9rem;cursor:pointer;line-height:1.5">
+            <input type="checkbox" name="terms" required style="margin-top:3px;accent-color:var(--accent);flex-shrink:0"/>
+            I agree to the <a href="#" style="color:var(--accent);text-decoration:none;margin:0 0.2rem">Terms of Service</a> and <a href="#" style="color:var(--accent);text-decoration:none;margin:0 0.2rem">Privacy Policy</a>
+          </label>
+        </div>
+
+        <div style="margin-bottom:1.8rem">
+          <label class="auth-check" style="display:flex;align-items:center;gap:0.5rem;font-size:0.9rem;cursor:pointer">
+            <input type="checkbox" name="newsletter" style="accent-color:var(--accent)"/>
+            Send me studio updates &amp; new character reveals
+          </label>
+        </div>
+
+        <button type="submit" class="auth-btn">
+          <span>Create Account →</span>
+        </button>
+
+      </form>
+
+      <p class="auth-footer-note">
+        Your information is encrypted and never shared with third parties.
+        <a href="#">Learn about our privacy practices →</a>
+      </p>
+
+      <div style="margin-top:2rem;text-align:center">
+        <a href="index.html" style="font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text);opacity:0.5;text-decoration:none;transition:opacity 0.3s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.5">
+          ← Back to Site
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /auth-page -->
+
+<script src="main.js"></script>
+</body>
+</html>
