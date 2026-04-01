@@ -37,7 +37,9 @@ body {
   color: var(--text);
   transition: background var(--transition), color var(--transition);
   overflow-x: hidden;
+  text-align: left;
 }
+[dir="rtl"] body { text-align: right; }
 
 /* ── NAVBAR ── */
 
@@ -957,7 +959,24 @@ footer {
 [dir="rtl"] .auth-options { flex-direction: row-reverse; }
 [dir="rtl"] .auth-divider::before, [dir="rtl"] .auth-divider::after { transform: scaleX(-1); }
 [dir="rtl"] .toggle-pw { right: auto; left: 1rem; }
-[dir="rtl"] .auth-input-wrap input { padding-right: 1.1rem; padding-left: 3rem; }
+.auth-footer-note a:hover { text-decoration: underline; }
+
+.auth-panel-controls {
+  position: absolute; top: 1.5rem; right: 1.5rem;
+  display: flex; gap: 0.6rem; z-index: 10;
+}
+.auth-panel-controls .theme-toggle,
+.auth-panel-controls .rtl-toggle {
+  background: var(--card-bg); border: 1px solid var(--border);
+  color: var(--text); padding: 0.45rem 0.75rem;
+  border-radius: 4px; cursor: pointer;
+  font-family: 'Space Mono', monospace; font-size: 0.62rem;
+  transition: all var(--transition);
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.auth-panel-controls .theme-toggle:hover,
+.auth-panel-controls .rtl-toggle:hover { border-color: var(--accent); color: var(--accent); }
+[dir="rtl"] .auth-panel-controls { right: auto; left: 1.5rem; }
 
 @media (max-width: 768px) {
   .auth-visual { display: none; }
