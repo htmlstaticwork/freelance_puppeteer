@@ -1,6 +1,41 @@
-// ── PUPPETER · MAIN JS ──
+// Mobile Menu System (FAIL-SAFE)
+function initMobileMenu() {
+  const toggle = (e) => {
+    const ham = e.target.closest('.hamburger');
+    const mm = document.querySelector('.mobile-menu');
+    if (ham && mm) {
+      e.preventDefault();
+      ham.classList.toggle('active');
+      mm.classList.toggle('open');
+    }
+    
+    const link = e.target.closest('.mobile-menu a');
+    if (link) {
+      const burger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.mobile-menu');
+      if (burger && menu) {
+        burger.classList.remove('active');
+        menu.classList.remove('open');
+      }
+    }
+  };
+  document.addEventListener('click', toggle);
+  document.addEventListener('touchstart', toggle, { passive: false });
+}
+initMobileMenu();
 
-// Theme
+// FAQ Accordion (Reliable Delegation)
+document.addEventListener('click', e => {
+  const quest = e.target.closest('.faq-question');
+  if (quest) {
+    const item = quest.parentElement;
+    const isActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    if (!isActive) item.classList.add('active');
+  }
+});
+
+// ── THEME & SETTINGS ──
 const root = document.documentElement;
 const saved = localStorage.getItem('theme') || 'dark';
 root.setAttribute('data-theme', saved);
@@ -40,46 +75,6 @@ document.querySelectorAll('.rtl-toggle').forEach(btn => {
     updateRtlBtn();
   });
 });
-
-// Custom Cursor
-const cursor = document.querySelector('.cursor');
-const ring = document.querySelector('.cursor-ring');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-function animateCursor() {
-  if (cursor) { cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; }
-  rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
-  if (ring) { ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; }
-  requestAnimationFrame(animateCursor);
-}
-animateCursor();
-document.querySelectorAll('a, button, .card, .showreel-item').forEach(el => {
-  el.addEventListener('mouseenter', () => { if (cursor) { cursor.style.width = '20px'; cursor.style.height = '20px'; } if (ring) { ring.style.width = '56px'; ring.style.height = '56px'; } });
-  el.addEventListener('mouseleave', () => { if (cursor) { cursor.style.width = '12px'; cursor.style.height = '12px'; } if (ring) { ring.style.width = '36px'; ring.style.height = '36px'; } });
-});
-
-// Mobile Menu
-const hamburger = document.querySelector('.hamburger');
-const mobileMenu = document.querySelector('.mobile-menu');
-if (hamburger && mobileMenu) {
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
-    const spans = hamburger.querySelectorAll('span');
-    if (mobileMenu.classList.contains('open')) {
-      spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      spans[1].style.opacity = '0';
-      spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-    } else {
-      spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    }
-  });
-  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
-    hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-  }));
-}
-
-// Scroll Reveal
 const reveals = document.querySelectorAll('.reveal');
 const revealObs = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

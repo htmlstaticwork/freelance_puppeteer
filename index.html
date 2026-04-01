@@ -9,21 +9,21 @@
 </head>
 <body>
 
-<!-- Cursor -->
-<div class="cursor"></div>
-<div class="cursor-ring"></div>
 <div class="page-transition"></div>
 
 <!-- NAVBAR -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Puppeter</a>
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Logo"/>
+      Puppeter
+    </a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="home2.html">Home 2</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem">Login</a></li>
     </ul>
     <div class="nav-right">
       <button class="rtl-toggle" aria-label="Toggle RTL/LTR direction">
@@ -31,6 +31,8 @@
         <span class="rtl-label">RTL</span>
       </button>
       <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem">Login</a>
+
       <button class="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -40,15 +42,22 @@
 
 <!-- Mobile Menu -->
 <div class="mobile-menu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
-  <a href="login.html">Login</a>
+  <div class="mobile-menu-links">
+    <a href="index.html">Home</a>
+    <a href="home2.html">Home 2</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="mobile-menu-controls">
+    <button class="theme-toggle">☀️ Theme</button>
+    <button class="rtl-toggle">⇄ RTL</button>
+    <a href="login.html" class="btn btn-primary">Login</a>
+  </div>
 </div>
 
 <!-- HERO -->
-<section class="hero hero-home">
+<section class="hero hero-home" style="--hero-image: url('https://www.eurokidsindia.com/blog/wp-content/uploads/2023/10/7-key-benefits-of-puppet-theatre-for-kids.jpg')">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <span class="subtitle">Master Puppeteer & Performance Artist</span>
@@ -58,8 +67,8 @@
     </h1>
     <p class="body-text">Crafting extraordinary puppet characters that blur the line between wood, fabric, and living emotion. Two decades of storytelling through the ancient art of puppetry.</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="portfolio.html" class="btn btn-primary">View Showreels ↗</a>
-      <a href="about.html" class="btn btn-outline">My Journey</a>
+      <a href="portfolio.html" class="btn btn-primary"><span>View Showreels</span></a>
+      <a href="about.html" class="btn btn-outline"><span>My Journey</span></a>
     </div>
   </div>
   <div class="scroll-indicator">
@@ -75,24 +84,34 @@
     <h2 class="section-title reveal">Crafting Magic<br/><em>One String at a Time</em></h2>
     <div class="cards-grid">
       <div class="card reveal">
-        <div class="card-icon">🎭</div>
+        <img src="https://thedottedi.in/cdn/shop/files/Dottedi-Puppet-Show_d34c12fc-80c2-4ba5-9193-a06e3b9deed8.jpg?v=1696443538" alt="Live" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;"/>
         <h3>Live Performances</h3>
         <p>Captivating stage shows for theatres, festivals, corporate events, and private celebrations. Every show is uniquely choreographed.</p>
       </div>
       <div class="card reveal">
-        <div class="card-icon">📺</div>
+        <img src="https://i.guim.co.uk/img/media/6e2f6913aa039ff6393f8d0a0e573ff3b5386a94/0_0_2100_1500/master/2100.jpg?width=700&quality=85&auto=format&fit=max&s=a59e6abca4ab4542cdc221163e7f109b" alt="Film" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;"/>
         <h3>Film & Television</h3>
         <p>Professional puppetry for TV productions, advertisements, music videos, and feature films. Full technical crew available.</p>
       </div>
       <div class="card reveal">
-        <div class="card-icon">✂️</div>
+        <img src="https://sb-assets.budsies.com/f/162716/500x500/73332f5dae/girl-puppet_copy_1.png/m/fit-in/480x480" alt="Custom" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;"/>
         <h3>Custom Characters</h3>
         <p>Bespoke puppet design and fabrication — from concept sketches to fully articulated, camera-ready characters for any brand or story.</p>
       </div>
       <div class="card reveal">
-        <div class="card-icon">🎓</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC6lhRNdIdWNSAKGCZ-3pMa9lQVk1axkdDA&s" alt="Workshops" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;"/>
         <h3>Workshops</h3>
         <p>Immersive puppetry workshops for schools, universities, and studios. Learn construction, voice, movement, and character development.</p>
+      </div>
+      <div class="card reveal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PWet-x8nqQ5zRjfCqF4tpRHMfLbgamF7WQ&s" alt="Shadow" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;"/>
+        <h3>Shadow Theatre</h3>
+        <p>Collaborative shadow puppetry and light design for cinematic stage productions and experimental media projects.</p>
+      </div>
+      <div class="card reveal">
+        <img src="https://media.licdn.com/dms/image/v2/D4D12AQFIRt6KpOvirg/article-cover_image-shrink_720_1280/B4DZYQuTumHwAI-/0/1744037298271?e=2147483647&v=beta&t=FKUGZT6H0cdpIoVs3RNP6NQJ0K6GC3zdeEpLBEEMOfU" alt="Consulting" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;"/>
+        <h3>Educational Consulting</h3>
+        <p>Guidance for directors and writers on integrating puppetry into scripts, casting, and technical stage setups.</p>
       </div>
     </div>
   </div>
@@ -112,20 +131,20 @@
         <p class="reveal">My work has graced stages across 34 countries, earned 12 international awards, and touched millions through television and film — yet every performance begins with the same quiet ritual: listening to what the puppet wants to say.</p>
         <div class="stat-row reveal">
           <div class="stat">
-            <div class="stat-num" data-target="34" data-suffix="+">0+</div>
+            <div class="stat-num" data-target="34" data-suffix="+">32+</div>
             <div class="stat-label">Countries</div>
           </div>
           <div class="stat">
-            <div class="stat-num" data-target="200" data-suffix="+">0+</div>
+            <div class="stat-num" data-target="200" data-suffix="+">200+</div>
             <div class="stat-label">Characters</div>
           </div>
           <div class="stat">
-            <div class="stat-num" data-target="12">0</div>
+            <div class="stat-num" data-target="12">12</div>
             <div class="stat-label">Awards</div>
           </div>
         </div>
         <br/>
-        <a href="about.html" class="btn btn-primary reveal">Full Story →</a>
+        <a href="about.html" class="btn btn-primary reveal"><span>Full Story →</span></a>
       </div>
     </div>
   </div>
@@ -178,21 +197,21 @@
     <h2 class="section-title reveal">Recent Work</h2>
     <div class="showreel-grid">
       <div class="showreel-item reveal" data-category="stage">
-        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80" alt="Shadow Theatre"/>
+        <img src="https://southlondon.co.uk/wp-content/uploads/2023/11/glw337_family_norwich-puppet-theatre_midsummer-image1-by-andi-sapey.jpg.webp" alt="Shadow Theatre"/>
         <div class="showreel-overlay">
           <button class="play-btn" data-video="true">▶</button>
           <h4>Shadow & Light — Edinburgh</h4>
         </div>
       </div>
       <div class="showreel-item reveal" data-category="tv">
-        <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&q=80" alt="TV Production"/>
+        <img src="https://i.guim.co.uk/img/media/0bdfd1efa0cd9f1413984baf2410f7ee285e4d25/0_2268_3744_2904/master/3744.jpg?width=445&dpr=1&s=none&crop=none" alt="TV Production"/>
         <div class="showreel-overlay">
           <button class="play-btn" data-video="true">▶</button>
           <h4>Dreamweavers — BBC Series</h4>
         </div>
       </div>
       <div class="showreel-item reveal" data-category="character">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Character Creation"/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpl-73Zn5LeMleFse4HYHzu8rtjADTSooDzQ&s" alt="Character Creation"/>
         <div class="showreel-overlay">
           <button class="play-btn" data-video="true">▶</button>
           <h4>Character Creation Process</h4>
@@ -200,7 +219,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:3rem">
-      <a href="portfolio.html" class="btn btn-primary reveal">Full Portfolio →</a>
+      <a href="portfolio.html" class="btn btn-primary reveal"><span>Full Portfolio →</span></a>
     </div>
   </div>
 </section>
@@ -210,22 +229,33 @@
   <div class="section-inner">
     <span class="section-label reveal">Voices</span>
     <h2 class="section-title reveal" style="text-align:center">What They Say</h2>
+
     <div class="cards-grid" style="margin-top:3rem">
+
       <div class="testimonial-card reveal">
-        <div class="quote-mark">"</div>
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sofia" class="testimonial-img">
+        </div>
         <p>Marcus transformed our opening ceremony into something the audience will never forget. His characters felt more real than the humans on stage.</p>
         <span class="author">— Sofia Reinholt, Edinburgh Festival Director</span>
       </div>
+
       <div class="testimonial-card reveal">
-        <div class="quote-mark">"</div>
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James" class="testimonial-img">
+        </div>
         <p>Working with Puppeter on our BBC series was a revelation. The technical precision combined with emotional depth is unparalleled in the industry.</p>
         <span class="author">— James Whitmore, BBC Productions</span>
       </div>
+
       <div class="testimonial-card reveal">
-        <div class="quote-mark">"</div>
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Chen" class="testimonial-img">
+        </div>
         <p>Our custom mascot puppet has become the face of our brand. The craftsmanship, the personality — children and adults alike adore it.</p>
         <span class="author">— Chen Li, Global Toy Co.</span>
       </div>
+
     </div>
   </div>
 </section>
@@ -233,9 +263,9 @@
 <!-- CTA BANNER -->
 <section class="cta-banner">
   <div class="section-inner">
-    <h2>Ready to Bring Your<br/>Story to Life?</h2>
-    <p>Whether it's a grand theatrical production or an intimate workshop — let's create something extraordinary together.</p>
-    <a href="contact.html" class="btn btn-outline">Start a Conversation →</a>
+    <h2 class="reveal"><span>Ready to Bring Your<br/>Story to Life?</span></h2>
+    <p class="reveal">Whether it's a grand theatrical production or an intimate workshop — let's create something extraordinary together.</p>
+    <a href="contact.html" class="btn btn-outline reveal"><span>GET A QUOTE TODAY →</span></a>
   </div>
 </section>
 
@@ -244,7 +274,10 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">Puppeter</a>
+        <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Logo"/>
+      Puppeter
+    </a>
         <p>The art of giving voice to the voiceless — one carefully crafted character at a time. Based in London, performing worldwide.</p>
         <div class="social-icons">
           <a href="#" class="social-icon si-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -269,6 +302,14 @@
           <li><a href="#">Film & Television</a></li>
           <li><a href="#">Custom Characters</a></li>
           <li><a href="#">Workshops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach Out</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> 15 Artisan Way, London</a></li>
+          <li><a href="tel:+442079460123"><i class="fas fa-phone"></i> +44 20 7946 0123 345 211</a></li>
+          <li><a href="mailto:hello@puppeteer.com"><i class="fas fa-envelope"></i> hello@puppeteers.com</a></li>
         </ul>
       </div>
     </div>

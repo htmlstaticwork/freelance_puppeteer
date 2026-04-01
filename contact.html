@@ -1,234 +1,289 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark" dir="ltr">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Contact · Puppeter</title>
-<link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Puppeter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
 
-<div class="cursor"></div>
-<div class="cursor-ring"></div>
-<div class="page-transition"></div>
+  <div class="page-transition"></div>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Puppeter</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-      <li><a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem">Login</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="rtl-toggle" aria-label="Toggle RTL/LTR direction">
-        <span class="rtl-icon">⇄</span>
-        <span class="rtl-label">RTL</span>
-      </button>
-      <button class="theme-toggle">☀️</button>
-      <button class="hamburger"><span></span><span></span><span></span></button>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Logo" />
+        Puppeter
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="home2.html">Home 2</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="rtl-toggle" aria-label="Toggle RTL/LTR direction">
+          <span class="rtl-icon">⇄</span>
+          <span class="rtl-label">RTL</span>
+        </button>
+        <button class="theme-toggle">☀️</button>
+        <a href="login.html" class="btn btn-primary"
+          style="padding:0.5rem 1.2rem;font-size:0.65rem"><span>Login</span></a>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="index.html">Home</a>
+      <a href="home2.html">Home 2</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="mobile-menu-controls">
+      <button class="theme-toggle">☀️ Theme</button>
+      <button class="rtl-toggle">⇄ RTL</button>
+      <a href="login.html" class="btn btn-primary">Login</a>
     </div>
   </div>
-</nav>
-<div class="mobile-menu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
-  <a href="login.html">Login</a>
-</div>
 
-<!-- HERO -->
-<section class="hero hero-contact" style="min-height:55vh">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <span class="subtitle">Let's Create Together</span>
-    <h1 class="display-title">Get In <span class="accent-word">Touch</span></h1>
-    <p class="body-text">Every great collaboration begins with a single conversation. Tell me about your vision.</p>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero hero-contact"
+    style="--hero-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80'); min-height:55vh">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="subtitle">Let's Create Together</span>
+      <h1 class="display-title">Get In <span class="accent-word">Touch</span></h1>
+      <p class="body-text">Every great collaboration begins with a single conversation. Tell me about your vision.</p>
+    </div>
+  </section>
 
-<!-- CONTACT SECTION -->
-<section>
-  <div class="section-inner">
-    <div class="contact-grid">
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="section-inner">
+      <div class="contact-grid">
 
-      <!-- INFO CARDS -->
-      <div>
-        <span class="section-label reveal">Contact Information</span>
-        <h2 class="section-title reveal" style="margin-bottom:2rem">Find Me<br/><em>Here</em></h2>
+        <!-- INFO CARDS -->
+        <div>
+          <span class="section-label reveal">Contact Information</span>
+          <h2 class="section-title reveal" style="margin-bottom:2rem">Find Me<br /><em>Here</em></h2>
         <div class="contact-info-cards">
           <div class="contact-card reveal">
             <div class="contact-card-icon">📍</div>
-            <div>
+            <div class="contact-card-body">
               <h4>Studio Address</h4>
               <p>42 Marionette Lane, Hackney, London E8 3PT, United Kingdom</p>
             </div>
           </div>
           <div class="contact-card reveal">
             <div class="contact-card-icon">📞</div>
-            <div>
+            <div class="contact-card-body">
               <h4>Phone</h4>
               <p>+44 (0) 20 7946 0823</p>
             </div>
           </div>
           <div class="contact-card reveal">
             <div class="contact-card-icon">✉️</div>
-            <div>
+            <div class="contact-card-body">
               <h4>Email</h4>
-              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9cf1fdeeffe9efdcece9ececf9e8f9eeb2efe8e9f8f5f3">[email&#160;protected]</a></p>
+              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a1ccc0d3c2d4d2e1d1d4d1d1c4d5c4d38fc2cecc">[email&#160;protected]</a></p>
             </div>
           </div>
           <div class="contact-card reveal">
             <div class="contact-card-icon">⏰</div>
-            <div>
+            <div class="contact-card-body">
               <h4>Studio Hours</h4>
               <p>Mon–Fri: 10am–6pm · Sat: By appointment</p>
             </div>
           </div>
         </div>
 
-        <!-- SOCIAL ICONS -->
-        <div style="margin-top:2rem">
-          <span class="section-label" style="margin-bottom:1rem;display:block">Follow the Work</span>
+          <!-- SOCIAL ICONS -->
+          <div style="margin-top:2rem">
+            <span class="section-label" style="margin-bottom:1rem;display:block">Follow the Work</span>
+            <div class="social-icons">
+              <a href="#" class="social-icon si-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon si-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon si-tw" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="social-icon si-li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-wrap">
+          <span class="section-label reveal">Send a Message</span>
+          <h2 class="section-title reveal" style="margin-bottom:2rem">Start a<br /><em>Conversation</em></h2>
+          <form id="contact-form">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Marcus" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Vale" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="project">Project Type</label>
+              <select id="project" name="project">
+                <option value="">Select a service…</option>
+                <option>Live Performance</option>
+                <option>Film & Television</option>
+                <option>Custom Character Commission</option>
+                <option>Workshop / Education</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Approximate Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range…</option>
+                <option>Under £2,000</option>
+                <option>£2,000 – £10,000</option>
+                <option>£10,000 – £30,000</option>
+                <option>£30,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message"
+                placeholder="Tell me about your project, timeline, and any specific requirements…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><span>Send Message
+                →</span></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-wrap reveal" style="margin-top:4rem">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9927.36743386!2d-0.074!3d51.545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b77a26a8b0f%3A0x8ffffc84a5a8b1a!2sHackney%2C%20London!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
+          width="100%" height="380" style="border:0;display:block;filter:grayscale(1) contrast(1.1) sepia(0.3);"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Puppeter Studio Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="background:var(--card-bg)">
+    <div class="section-inner">
+      <span class="section-label reveal">Common Questions</span>
+      <h2 class="section-title reveal" style="text-align:center">FAQ</h2>
+      <div class="faq-accordion">
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            Lead Times <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Character commissions typically require 8–16 weeks. Live performance bookings should be made at least 3 months in advance.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            International Work <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — Marcus regularly works internationally. Travel, accommodation, and logistics costs are discussed as part of the project brief.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            Packages <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Every project is bespoke. An initial consultation is free and results in a detailed scope and fixed-price proposal.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            IP & Rights <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>By default, characters remain the intellectual property of the commissioner upon full payment. Usage rights are clearly documented in contracts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="section-inner">
+      <h2>Ready When You Are</h2>
+      <p>No project is too ambitious. Let's begin with a single email and see where imagination leads.</p>
+      <a href="/cdn-cgi/l/email-protection#95f8f4e7f6e0e6d5e5e0e5e5f0e1f0e7bbe6e1e0f1fcfa" class="btn btn-outline"><span
+          class="__cf_email__"
+          data-cfemail="533e32213026201323262323362736217d202726373a3c">[email&#160;protected]</span> →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="Logo" />
+            Puppeter
+          </a>
+          <p>The art of giving voice to the voiceless — one carefully crafted character at a time.</p>
           <div class="social-icons">
-            <a href="#" class="social-icon si-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon si-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon si-tw" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-            <a href="#" class="social-icon si-li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon si-fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon si-ig"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon si-tw"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-icon si-li"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-      </div>
-
-      <!-- CONTACT FORM -->
-      <div class="contact-form-wrap">
-        <span class="section-label reveal">Send a Message</span>
-        <h2 class="section-title reveal" style="margin-bottom:2rem">Start a<br/><em>Conversation</em></h2>
-        <form id="contact-form">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem">
-            <div class="form-group">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname" placeholder="Marcus" required/>
-            </div>
-            <div class="form-group">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname" placeholder="Vale" required/>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required/>
-          </div>
-          <div class="form-group">
-            <label for="project">Project Type</label>
-            <select id="project" name="project">
-              <option value="">Select a service…</option>
-              <option>Live Performance</option>
-              <option>Film & Television</option>
-              <option>Custom Character Commission</option>
-              <option>Workshop / Education</option>
-              <option>General Enquiry</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="budget">Approximate Budget</label>
-            <select id="budget" name="budget">
-              <option value="">Select a range…</option>
-              <option>Under £2,000</option>
-              <option>£2,000 – £10,000</option>
-              <option>£10,000 – £30,000</option>
-              <option>£30,000+</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and any specific requirements…" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send Message →</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- MAP -->
-    <div class="map-wrap reveal" style="margin-top:4rem">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9927.36743386!2d-0.074!3d51.545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b77a26a8b0f%3A0x8ffffc84a5a8b1a!2sHackney%2C%20London!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
-        width="100%" height="380" style="border:0;display:block;filter:grayscale(1) contrast(1.1) sepia(0.3);"
-        allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Puppeter Studio Location">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section style="background:var(--card-bg)">
-  <div class="section-inner">
-    <span class="section-label reveal">Common Questions</span>
-    <h2 class="section-title reveal" style="text-align:center">FAQ</h2>
-    <div class="cards-grid">
-      <div class="card reveal">
-        <div class="card-icon">⏳</div>
-        <h3>Lead Times</h3>
-        <p>Character commissions typically require 8–16 weeks. Live performance bookings should be made at least 3 months in advance.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card-icon">✈️</div>
-        <h3>International Work</h3>
-        <p>Yes — Marcus regularly works internationally. Travel, accommodation, and logistics costs are discussed as part of the project brief.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card-icon">💼</div>
-        <h3>Packages</h3>
-        <p>Every project is bespoke. An initial consultation is free and results in a detailed scope and fixed-price proposal.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card-icon">📸</div>
-        <h3>IP & Rights</h3>
-        <p>By default, characters remain the intellectual property of the commissioner upon full payment. Usage rights are clearly documented in contracts.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-banner">
-  <div class="section-inner">
-    <h2>Ready When You Are</h2>
-    <p>No project is too ambitious. Let's begin with a single email and see where imagination leads.</p>
-    <a href="/cdn-cgi/l/email-protection#95f8f4e7f6e0e6d5e5e0e5e5f0e1f0e7bbe6e1e0f1fcfa" class="btn btn-outline"><span class="__cf_email__" data-cfemail="533e32213026201323262323362736217d202726373a3c">[email&#160;protected]</span> →</a>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo">Puppeter</a>
-        <p>The art of giving voice to the voiceless — one carefully crafted character at a time.</p>
-        <div class="social-icons">
-          <a href="#" class="social-icon si-fb"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon si-ig"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon si-tw"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" class="social-icon si-li"><i class="fab fa-linkedin-in"></i></a>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Live Performances</a></li>
+            <li><a href="#">Film & Television</a></li>
+            <li><a href="#">Custom Characters</a></li>
+            <li><a href="#">Workshops</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Reach Out</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> 15 Artisan Way, London</a></li>
+            <li><a href="tel:+442079460123"><i class="fas fa-phone"></i> +44 20 7946 0123 345 211</a></li>
+            <li><a href="mailto:hello@puppeteers.com"><i class="fas fa-envelope"></i> hello@puppeteers.com</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2025 Puppeter · Marcus Vale. All rights reserved.</p>
+        <p>Designed with strings &amp; soul.</p>
       </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="/cdn-cgi/l/email-protection#7d101c0f1e080e3d0d080d0d1809180f530e0908191412">Email Us</a></li>
-          <li><a href="tel:+442079460823">Call Studio</a></li>
-          <li><a href="#">Book a Workshop</a
+    </div>
+  </footer>
+
+  <button class="back-to-top">↑</button>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -9,19 +9,20 @@
 </head>
 <body>
 
-<div class="cursor"></div>
-<div class="cursor-ring"></div>
 <div class="page-transition"></div>
 
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Puppeter</a>
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Logo"/>
+      Puppeter
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html">Home 2</a></li>
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem">Login</a></li>
     </ul>
     <div class="nav-right">
       <button class="rtl-toggle" aria-label="Toggle RTL/LTR direction">
@@ -29,20 +30,28 @@
         <span class="rtl-label">RTL</span>
       </button>
       <button class="theme-toggle">☀️</button>
+      <a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem"><span>Login</span></a>
       <button class="hamburger"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
 <div class="mobile-menu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
-  <a href="login.html">Login</a>
+  <div class="mobile-menu-links">
+    <a href="index.html">Home</a>
+    <a href="home2.html">Home 2</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="mobile-menu-controls">
+    <button class="theme-toggle">☀️ Theme</button>
+    <button class="rtl-toggle">⇄ RTL</button>
+    <a href="login.html" class="btn btn-primary">Login</a>
+  </div>
 </div>
 
 <!-- HERO -->
-<section class="hero hero-about" style="min-height:60vh">
+<section class="hero hero-about" style="--hero-image: url('https://miro.medium.com/1*jEgk5WQG4w_3pdxnZrW4Yw.jpeg'); min-height:60vh">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <span class="subtitle">The Artisan's Story</span>
@@ -66,15 +75,15 @@
         <p class="reveal">Today, he balances live performance work with television productions, brand character creation, and a passionate commitment to teaching the next generation of puppet artists.</p>
         <div class="stat-row reveal">
           <div class="stat">
-            <div class="stat-num" data-target="20" data-suffix="yrs">0yrs</div>
+            <div class="stat-num" data-target="20" data-suffix="yrs">20yrs</div>
             <div class="stat-label">Experience</div>
           </div>
           <div class="stat">
-            <div class="stat-num" data-target="34" data-suffix="+">0+</div>
+            <div class="stat-num" data-target="34" data-suffix="+">34+</div>
             <div class="stat-label">Countries</div>
           </div>
           <div class="stat">
-            <div class="stat-num" data-target="200" data-suffix="+">0+</div>
+            <div class="stat-num" data-target="200" data-suffix="+">200+</div>
             <div class="stat-label">Characters</div>
           </div>
         </div>
@@ -88,113 +97,116 @@
   <div class="section-inner">
     <span class="section-label reveal">Mastery Areas</span>
     <h2 class="section-title reveal" style="text-align:center">The Craft</h2>
+
     <div class="cards-grid">
-      <div class="card reveal">
-        <div class="card-icon">🪆</div>
-        <h3>Marionettes</h3>
-        <p>String-operated figures in wood, foam latex, and mixed media. From tabletop to full-height theatrical scale.</p>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://ids.si.edu/ids/deliveryService?id=NMAH-85-15701&max=600" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3>Mariianderl</h3>
+          <p>String-operated figures in wood, foam latex, and mixed media. From tabletop to full-height theatrical scale.</p>
+        </div>
       </div>
-      <div class="card reveal">
-        <div class="card-icon">🌑</div>
-        <h3>Shadow Puppetry</h3>
-        <p>Traditional and contemporary shadow work using leather, acetate, and digital projection integration.</p>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://i.ytimg.com/vi/wK3U5DDQm-4/maxresdefault.jpg" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3>Dark Puppetry</h3>
+          <p>Traditional and contemporary shadow work using leather, acetate, and digital projection integration.</p>
+        </div>
       </div>
-      <div class="card reveal">
-        <div class="card-icon">🤖</div>
-        <h3>Animatronics</h3>
-        <p>Cable-and-rod mechanisms, servo motors, and custom rigs for film-quality creature performance.</p>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://www.stagewhispers.com.au/sites/default/files/imagecache/preview/news/_G4Y3095.JPG" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3>Macotronis</h3>
+          <p>Cable-and-rod mechanisms, servo motors, and custom rigs for film-quality creature performance.</p>
+        </div>
       </div>
-      <div class="card reveal">
-        <div class="card-icon">🎨</div>
-        <h3>Fabrication</h3>
-        <p>Full in-house workshop — sculpting, mould-making, casting, painting, costume, and final finishing.</p>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://www.roppets.com/wp-content/uploads/2016/12/puppet-fabrication.jpg" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3>Fabrication</h3>
+          <p>Full in-house workshop — sculpting, mould-making, casting, painting, costume, and final finishing.</p>
+        </div>
       </div>
+
+      <!-- NEW CARD 5 -->
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://www.wetaworkshop.com/web/image/125318-f28fe542/Creatures_WatweDoManudacture_004.jpg" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3>Creature Design</h3>
+          <p>Concept-to-creation pipeline for mythical and cinematic creatures with lifelike detailing.</p>
+        </div>
+      </div>
+
+      <!-- NEW CARD 6 -->
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://wepa.unima.org/wp-content/uploads/2017/09/tangshan_06-3.jpg" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3>Performance Direction</h3>
+          <p>Guiding puppeteers and actors to deliver emotionally rich and believable performances.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- TIMELINE -->
-<section>
-  <div class="section-inner">
-    <span class="section-label reveal">Journey</span>
-    <h2 class="section-title reveal" style="text-align:center">Milestones</h2>
-    <div class="timeline">
-      <div class="timeline-item reveal">
-        <div class="tl-content">
-          <div class="tl-year">2004</div>
-          <h3>First Professional Show</h3>
-          <p>Debut performance at Lisbon's Teatro São Luiz — a 45-minute solo puppet show that sold out its entire run.</p>
-        </div>
-        <div class="tl-dot"></div>
-        <div style="flex:1"></div>
-      </div>
-      <div class="timeline-item reveal">
-        <div style="flex:1"></div>
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-year">2009</div>
-          <h3>Osaka Apprenticeship</h3>
-          <p>Two-year immersion with Bunraku masters at the National Bunraku Theatre, fundamentally reshaping Marcus's approach to character and movement.</p>
-        </div>
-      </div>
-      <div class="timeline-item reveal">
-        <div class="tl-content">
-          <div class="tl-year">2013</div>
-          <h3>BBC Commission</h3>
-          <p>Lead puppet designer and performer for the acclaimed children's series 'Dreamweavers', reaching 4 million weekly viewers.</p>
-        </div>
-        <div class="tl-dot"></div>
-        <div style="flex:1"></div>
-      </div>
-      <div class="timeline-item reveal">
-        <div style="flex:1"></div>
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <div class="tl-year">2018</div>
-          <h3>Edinburgh Grand Prix</h3>
-          <p>Awarded the Edinburgh Festival's Grand Prix for Best Theatrical Production for 'Shadow & Light — a one-person, twelve-character epic performance.</p>
-        </div>
-      </div>
-      <div class="timeline-item reveal">
-        <div class="tl-content">
-          <div class="tl-year">2024</div>
-          <h3>The Puppeter Studio</h3>
-          <p>Opening of a dedicated public-facing studio in East London — offering workshops, residencies, and a permanent exhibition of characters.</p>
-        </div>
-        <div class="tl-dot"></div>
-        <div style="flex:1"></div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- BTS BEHIND SCENES -->
 <section style="background:var(--card-bg)">
   <div class="section-inner">
     <span class="section-label reveal">Process</span>
     <h2 class="section-title reveal" style="text-align:center">Behind the Scenes</h2>
+
     <div class="showreel-grid reveal">
+
       <div class="showreel-item" data-category="process">
-        <img src="https://images.unsplash.com/photo-1499540633125-484965b60031?w=600&q=80" alt="Workshop"/>
+        <img src="https://i0.wp.com/www.critical-stages.org/24/wp-content/uploads/sites/25/2021/10/image2.jpg?resize=800%2C450&ssl=1" style="width:100%; height:220px; object-fit:cover;">
         <div class="showreel-overlay">
           <button class="play-btn" data-video="true">▶</button>
           <h4>The Sculpting Process</h4>
         </div>
       </div>
+
       <div class="showreel-item" data-category="process">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Painting"/>
+        <img src="https://assets.mica.edu/files/resources/puppets-30.jpg" style="width:100%; height:220px; object-fit:cover;">
         <div class="showreel-overlay">
           <button class="play-btn" data-video="true">▶</button>
           <h4>Painting & Finishing</h4>
         </div>
       </div>
+
       <div class="showreel-item" data-category="process">
-        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80" alt="Rehearsal"/>
+        <img src="https://altoona.psu.edu/sites/altoona/files/styles/feature_article_primary/public/thelastree.jpg?itok=MH1qUpCl" style="width:100%; height:220px; object-fit:cover;">
         <div class="showreel-overlay">
           <button class="play-btn" data-video="true">▶</button>
           <h4>Character Rehearsal</h4>
         </div>
       </div>
+
+      <!-- NEW ITEM 4 -->
+      <div class="showreel-item" data-category="process">
+        <img src="https://i.ytimg.com/vi/o94_PYR5uqQ/maxresdefault.jpg" style="width:100%; height:220px; object-fit:cover;">
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>Rigging & Mechanics</h4>
+        </div>
+      </div>
+
+      <!-- NEW ITEM 5 -->
+      <div class="showreel-item" data-category="process">
+        <img src="https://thumbor.factoryinternational.org/eInQNGON2HGfflgErBfEEcvx1ro=/1100x619/filters:format(webp):quality(60)/https://publicydn4hdgozyjrg.blob.core.windows.net/public/dd/images/You_Tube_Thumbnail_Ep_1_No_thumb.85ae741.jpg" style="width:100%; height:220px; object-fit:cover;">
+        <div class="showreel-overlay">
+          <button class="play-btn" data-video="true">▶</button>
+          <h4>Final Performance</h4>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -202,9 +214,9 @@
 <!-- CTA -->
 <section class="cta-banner">
   <div class="section-inner">
-    <h2>Work With Me</h2>
-    <p>From intimate commissions to large-scale theatrical productions — every project begins with a conversation.</p>
-    <a href="contact.html" class="btn btn-outline">Get in Touch →</a>
+    <h2 class="reveal"><span>Work With Me</span></h2>
+    <p class="reveal">From intimate commissions to large-scale theatrical productions — every project begins with a conversation.</p>
+    <a href="contact.html" class="btn btn-outline reveal"><span>GET A QUOTE TODAY →</span></a>
   </div>
 </section>
 
@@ -212,7 +224,10 @@
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">Puppeter</a>
+        <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Logo"/>
+      Puppeter
+    </a>
         <p>The art of giving voice to the voiceless — one carefully crafted character at a time.</p>
         <div class="social-icons">
           <a href="#" class="social-icon si-fb"><i class="fab fa-facebook-f"></i></a>
@@ -237,6 +252,14 @@
           <li><a href="#">Film & Television</a></li>
           <li><a href="#">Custom Characters</a></li>
           <li><a href="#">Workshops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach Out</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> 15 Artisan Way, London</a></li>
+          <li><a href="tel:+442079460123"><i class="fas fa-phone"></i> +44 20 7946 0123 345 211</a></li>
+          <li><a href="mailto:hello@puppeteers.com"><i class="fas fa-envelope"></i> hello@puppeteers.com</a></li>
         </ul>
       </div>
     </div>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Puppeter · Immersive Puppetry Experiences</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="page-transition"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Logo"/>
+      Puppeter
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html" class="active">Home 2</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="rtl-toggle" aria-label="Toggle RTL/LTR direction">
+        <span class="rtl-icon">⇄</span>
+        <span class="rtl-label">RTL</span>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <a href="login.html" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.65rem">Login</a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu-links">
+    <a href="index.html">Home</a>
+    <a href="home2.html">Home 2</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="mobile-menu-controls">
+    <button class="theme-toggle">☀️ Theme</button>
+    <button class="rtl-toggle">⇄ RTL</button>
+    <a href="login.html" class="btn btn-primary">Login</a>
+  </div>
+</div>
+
+<!-- SECTION 1: HERO -->
+<section class="hero hero-home2" style="--hero-image: url('https://i.guim.co.uk/img/media/6e2f6913aa039ff6393f8d0a0e573ff3b5386a94/0_0_2100_1500/master/2100.jpg?width=700&quality=85&auto=format&fit=max&s=a59e6abca4ab4542cdc221163e7f109b')">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="subtitle">Bringing the Inanimate to Life</span>
+    <h1 class="display-title">
+      The Soul of
+      <span class="accent-word">The String</span>
+    </h1>
+    <p class="body-text">Discover a world where every movement is a word, and every shadow tells a story. Elite puppetry for film, television, and international stages.</p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;">
+      <a href="portfolio.html" class="btn btn-primary" style="min-width:220px;text-align:center"><span>OUR GALLERY ↗</span></a>
+      <a href="contact.html" class="btn btn-outline" style="min-width:220px;text-align:center"><span>HIRE THE MASTER</span></a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Explore</span>
+  </div>
+</section>
+
+<!-- SECTION 2: FEATURED SHOWCASE (Images in cards) -->
+<section class="grid-section">
+  <div class="section-inner">
+    <span class="section-label reveal">Featured Work</span>
+    <h2 class="section-title reveal">Cinematic<br/><em>Masterpieces</em></h2>
+
+    <div class="cards-grid">
+
+      <div class="card reveal" style="padding: 0; overflow: hidden; display: block;">
+        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=600&q=80" alt="Theatre" style="width:100%; height:250px; object-fit:cover;">
+        <div style="padding: 1.5rem;">
+          <h3>Gothic Tales</h3>
+          <p>A haunting exploration of Victorian folklore through shadow and rod puppetry.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="padding: 0; overflow: hidden; display: block;">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80" alt="Shadow" style="width:100%; height:250px; object-fit:cover;">
+        <div style="padding: 1.5rem;">
+          <h3>Celestial Echoes</h3>
+          <p>Experimental light work commissioned for the Sydney Opera House.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="padding: 0; overflow: hidden; display: block;">
+        <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&q=80" alt="Creature" style="width:100%; height:250px; object-fit:cover;">
+        <div style="padding: 1.5rem;">
+          <h3>The Forest Giant</h3>
+          <p>Collaborative creature design for major motion pictures and TV series.</p>
+        </div>
+      </div>
+
+      <!-- NEW CARD 4 -->
+      <div class="card reveal" style="padding: 0; overflow: hidden; display: block;">
+        <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?w=600&q=80" alt="Performance" style="width:100%; height:250px; object-fit:cover;">
+        <div style="padding: 1.5rem;">
+          <h3>Phantom Stage</h3>
+          <p>A surreal stage production blending live puppetry with immersive projection mapping.</p>
+        </div>
+      </div>
+
+      <!-- NEW CARD 5 -->
+      <div class="card reveal" style="padding: 0; overflow: hidden; display: block;">
+        <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=600&q=80" alt="Fantasy" style="width:100%; height:250px; object-fit:cover;">
+        <div style="padding: 1.5rem;">
+          <h3>Mythic Realms</h3>
+          <p>Epic fantasy storytelling brought to life through large-scale puppet installations.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: EXPERTISE (Words only, no emojis) -->
+<section class="alternate-bg">
+  <div class="section-inner">
+    <span class="section-label reveal">Our Expertise</span>
+    <h2 class="section-title reveal">Specialized<br/><em>Techniques</em></h2>
+
+    <div class="cards-grid">
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://clivehicksjenkins.wordpress.com/wp-content/uploads/2014/01/3e718eda1e05a05c0affc776979cefc01.jpg" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3 style="color: var(--accent); font-family: 'Space Mono', monospace; font-size: 0.9rem; letter-spacing: 0.2em;">TECHNIQUE 01</h3>
+          <h3>Marionettes</h3>
+          <p>Mastering complex string systems with up to 24 control points for hyper-realistic human movement.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFh8aQNN02cmgVJt5c8h3g_u67rELWUjWWA&s" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3 style="color: var(--accent); font-family: 'Space Mono', monospace; font-size: 0.9rem; letter-spacing: 0.2em;">TECHNIQUE 02</h3>
+          <h3>Animatronics</h3>
+          <p>Blending traditional carving with modern servo-mechanisms for seamless facial expressions.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://images.stockcake.com/public/5/a/3/5a3ee0e6-2e75-4c77-b232-50d85892bd7a_large/shadow-puppets-dance-stockcake.jpg" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3 style="color: var(--accent); font-family: 'Space Mono', monospace; font-size: 0.9rem; letter-spacing: 0.2em;">TECHNIQUE 03</h3>
+          <h3>Shadow Arts</h3>
+          <p>Ancient Wayang traditions met with modern laser-cut precision and cinematic lighting.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToRoJvDIeVVZPWXX8-V3CWNGJuZCKDVlxK9g&s" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3 style="color: var(--accent); font-family: 'Space Mono', monospace; font-size: 0.9rem; letter-spacing: 0.2em;">TECHNIQUE 04</h3>
+          <h3>Digital Capture</h3>
+          <p>Puppet-driven performance capture for CG characters in films and video games.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://i0.wp.com/www.critical-stages.org/19/wp-content/uploads/sites/20/2019/06/PHOTO-2-The-Little-Matchgirl.The-Little-Matchgirl.-Shakespeares-Globe.-Photo-credit-%40stevetanner.jpg?fit=700%2C466&ssl=1&w=640" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3 style="color: var(--accent); font-family: 'Space Mono', monospace; font-size: 0.9rem; letter-spacing: 0.2em;">TECHNIQUE 05</h3>
+          <h3>Hybrid Puppetry</h3>
+          <p>Combining physical puppets with AR/VR layers for next-generation interactive storytelling.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <img src="https://thetheatretimes.com/wp-content/uploads/2018/11/5beae13215e9f93f3c40d9f8.jpg" style="width:100%; height:200px; object-fit:cover;">
+        <div style="padding:1.5rem;">
+          <h3 style="color: var(--accent); font-family: 'Space Mono', monospace; font-size: 0.9rem; letter-spacing: 0.2em;">TECHNIQUE 06</h3>
+          <h3>Mechanical Rigs</h3>
+          <p>Custom-engineered internal rigs enabling fluid, lifelike motion in large-scale puppets.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: THE CRAFT (Image focus) -->
+<section>
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-label reveal">The Process</span>
+        <h2 class="section-title reveal">From Wood<br/><em>To Soul</em></h2>
+        <p class="reveal">Every character begins as a block of lime wood or a sketch on a napkin. We follow a rigorous process of anatomical study and mechanical engineering to ensure every joint moves with intent.</p>
+        <p class="reveal">Our studio in London is a blend of a dusty carpenter's workshop and a high-tech electronics lab, where the old worlds and new technologies coexist.</p>
+        <div style="margin-top: 2rem;">
+          <a href="about.html" class="btn btn-primary reveal"><span>LEARN MORE →</span></a>
+        </div>
+      </div>
+      <div class="about-image-wrapper reveal">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Craftsmanship"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: PERFORMANCE AREAS (Words & Images) -->
+<section class="alternate-bg">
+  <div class="section-inner">
+    <span class="section-label reveal">Where We Shine</span>
+    <h2 class="section-title reveal" style="text-align:center">Performance<br/><em>Venues</em></h2>
+
+    <div class="features-grid reveal" style="margin-top:4rem;">
+
+      <div class="feature-item" style="overflow:hidden;">
+        <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/6e/e3/06.jpg" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;">
+        <div class="feature-num">I</div>
+        <h3>Theatres</h3>
+        <p>Main-stage productions and intimate black-box performances worldwide.</p>
+      </div>
+
+      <div class="feature-item" style="overflow:hidden;">
+        <img src="https://images.squarespace-cdn.com/content/v1/555cd8b8e4b0c647a26e43c9/a2d281cb-03d0-4114-a7d5-9c519bf550ce/IMG_8562.JPEG" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;">
+        <div class="feature-num">II</div>
+        <h3>Film Sets</h3>
+        <p>Precise technical puppetry for the camera, working with top VFX houses.</p>
+      </div>
+
+      <div class="feature-item" style="overflow:hidden;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJPcfh7nlPHnZL39AaxiU2Se_bTcboNbGQNg&s" style="width:100%; height:180px; object-fit:cover; margin-bottom:1rem;">
+        <div class="feature-num">III</div>
+        <h3>Galleries</h3>
+        <p>Kinetic installations and interactive art exhibits in global capitals.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: CALL TO ACTION -->
+<section class="cta-banner">
+  <div class="section-inner">
+    <h2 class="reveal"><span>Ready to Start<br/>The Show?</span></h2>
+    <p class="reveal">Connect with Marcus Vale and his team to bring your creative vision to life with world-class puppetry.</p>
+    <a href="contact.html" class="btn btn-outline reveal"><span>GET A QUOTE TODAY →</span></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="logo.png" alt="Logo"/>
+          Puppeter
+        </a>
+        <p>The art of giving voice to the voiceless — one carefully crafted character at a time. Based in London, performing worldwide.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon si-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon si-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon si-tw" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon si-li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Live Performances</a></li>
+          <li><a href="#">Film & Television</a></li>
+          <li><a href="#">Custom Characters</a></li>
+          <li><a href="#">Workshops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach Out</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> 15 Artisan Way, London</a></li>
+          <li><a href="tel:+442079460123"><i class="fas fa-phone"></i> +44 20 7946 0123 345 211</a></li>
+          <li><a href="mailto:hello@puppeteers.com"><i class="fas fa-envelope"></i> hello@puppeteers.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Puppeter · Marcus Vale. All rights reserved.</p>
+      <p>Designed with strings &amp; soul.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>
