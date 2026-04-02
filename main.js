@@ -1,26 +1,35 @@
-// Mobile Menu System (FAIL-SAFE)
+// Mobile Menu System
 function initMobileMenu() {
-  const toggle = (e) => {
-    const ham = e.target.closest('.hamburger');
-    const mm = document.querySelector('.mobile-menu');
-    if (ham && mm) {
-      e.preventDefault();
+  const ham = document.querySelector('.hamburger');
+  const mm = document.querySelector('.mobile-menu');
+  const links = document.querySelectorAll('.mobile-menu a');
+
+  if (ham && mm) {
+    ham.addEventListener('click', (e) => {
+      e.stopPropagation();
       ham.classList.toggle('active');
       mm.classList.toggle('open');
-    }
-    
-    const link = e.target.closest('.mobile-menu a');
-    if (link) {
-      const burger = document.querySelector('.hamburger');
-      const menu = document.querySelector('.mobile-menu');
-      if (burger && menu) {
-        burger.classList.remove('active');
-        menu.classList.remove('open');
+      document.body.style.overflow = mm.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking links
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        ham.classList.remove('active');
+        mm.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (mm.classList.contains('open') && !mm.contains(e.target) && !ham.contains(e.target)) {
+        ham.classList.remove('active');
+        mm.classList.remove('open');
+        document.body.style.overflow = '';
       }
-    }
-  };
-  document.addEventListener('click', toggle);
-  document.addEventListener('touchstart', toggle, { passive: false });
+    });
+  }
 }
 initMobileMenu();
 
@@ -90,12 +99,33 @@ window.addEventListener('scroll', () => {
 });
 if (btt) btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// Active Nav Link
-const navLinks = document.querySelectorAll('.nav-links a, .mobile-menu a');
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-navLinks.forEach(link => {
-  if (link.getAttribute('href') === currentPage) link.classList.add('active');
-});
+// Active Nav Link (Persistent - High Precision)
+function setActiveLink() {
+  const navLinks = document.querySelectorAll('nav a, .mobile-menu a, .footer-col a');
+  const currentPath = window.location.pathname.toLowerCase().split('/').pop() || 'index.html';
+  const currentFile = (currentPath === '' || currentPath === '/') ? 'index.html' : currentPath;
+  
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href')?.toLowerCase().split('/').pop() || 'index.html';
+    const linkFile = (href === '' || href === '/') ? 'index.html' : href;
+    
+    if (currentFile === linkFile) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+}
+
+// Global initialization
+function initApp() {
+  initMobileMenu();
+  setActiveLink();
+}
+
+// Execute on load & during interaction
+document.addEventListener('DOMContentLoaded', initApp);
+window.addEventListener('load', initApp);
 
 // Video Modal
 const modal = document.querySelector('.modal-backdrop');
