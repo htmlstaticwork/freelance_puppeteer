@@ -25,17 +25,17 @@
         <li><a href="home2.html">Home 2</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="active">Reach Us</a></li>
       </ul>
       <div class="nav-right">
         <button class="rtl-toggle" aria-label="Toggle RTL/LTR direction">
-          <span class="rtl-icon">⇄</span>
           <span class="rtl-label">RTL</span>
         </button>
-        <button class="theme-toggle">☀️</button>
-        <a href="login.html" class="btn btn-primary"
-          style="padding:0.5rem 1.2rem;font-size:0.65rem"><span>Login</span></a>
-        <button class="hamburger"><span></span><span></span><span></span></button>
+        <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+        
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </nav>
@@ -45,12 +45,11 @@
       <a href="home2.html">Home 2</a>
       <a href="about.html">About</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Reach Us</a>
     </div>
     <div class="mobile-menu-controls">
       <button class="theme-toggle">☀️ Theme</button>
-      <button class="rtl-toggle">⇄ RTL</button>
-      <a href="login.html" class="btn btn-primary"><span>Login</span></a>
+      <button class="rtl-toggle">RTL</button>
     </div>
   </div>
 
@@ -76,28 +75,28 @@
           <h2 class="section-title reveal" style="margin-bottom:2rem">Find Me<br /><em>Here</em></h2>
         <div class="contact-info-cards">
           <div class="contact-card reveal">
-            <div class="contact-card-icon">📍</div>
+            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div class="contact-card-body">
               <h4>Studio Address</h4>
               <p>42 Marionette Lane, Hackney, London E8 3PT, United Kingdom</p>
             </div>
           </div>
           <div class="contact-card reveal">
-            <div class="contact-card-icon">📞</div>
+            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
             <div class="contact-card-body">
               <h4>Phone</h4>
               <p>+44 (0) 20 7946 0823</p>
             </div>
           </div>
           <div class="contact-card reveal">
-            <div class="contact-card-icon">✉️</div>
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
             <div class="contact-card-body">
               <h4>Email</h4>
-              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a1ccc0d3c2d4d2e1d1d4d1d1c4d5c4d38fc2cecc">[email&#160;protected]</a></p>
+              <p>hello@puppeteers.com</p>
             </div>
           </div>
           <div class="contact-card reveal">
-            <div class="contact-card-icon">⏰</div>
+            <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
             <div class="contact-card-body">
               <h4>Studio Hours</h4>
               <p>Mon–Fri: 10am–6pm · Sat: By appointment</p>
@@ -125,16 +124,16 @@
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem">
               <div class="form-group">
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname" placeholder="Marcus" required />
+                <input type="text" id="fname" name="fname" placeholder="" required />
               </div>
               <div class="form-group">
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" placeholder="Vale" required />
+                <input type="text" id="lname" name="lname" placeholder="" required />
               </div>
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <input type="email" id="email" name="email" placeholder="" required />
             </div>
             <div class="form-group">
               <label for="project">Project Type</label>

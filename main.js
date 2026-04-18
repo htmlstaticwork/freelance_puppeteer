@@ -69,8 +69,19 @@ root.setAttribute('dir', savedDir);
 function updateRtlBtn() {
   document.querySelectorAll('.rtl-toggle').forEach(btn => {
     const isRtl = root.getAttribute('dir') === 'rtl';
-    btn.querySelector('.rtl-label').textContent = isRtl ? 'LTR' : 'RTL';
-    btn.querySelector('.rtl-icon').textContent = isRtl ? '⇄' : '⇄';
+    const label = btn.querySelector('.rtl-label');
+    const icon = btn.querySelector('.rtl-icon');
+    
+    if (label) {
+      label.textContent = isRtl ? 'LTR' : 'RTL';
+    } else {
+      // If no label span, swap text content directly if it's text-only toggle
+      if (btn.textContent.trim() === 'RTL' || btn.textContent.trim() === 'LTR') {
+        btn.textContent = isRtl ? 'LTR' : 'RTL';
+      }
+    }
+    
+    if (icon) icon.textContent = isRtl ? '⇄' : '⇄';
     btn.setAttribute('title', isRtl ? 'Switch to Left-to-Right' : 'Switch to Right-to-Left');
   });
 }
@@ -104,11 +115,11 @@ function setActiveLink() {
   const navLinks = document.querySelectorAll('nav a, .mobile-menu a, .footer-col a');
   const currentPath = window.location.pathname.toLowerCase().split('/').pop() || 'index.html';
   const currentFile = (currentPath === '' || currentPath === '/') ? 'index.html' : currentPath;
-  
+
   navLinks.forEach(link => {
     const href = link.getAttribute('href')?.toLowerCase().split('/').pop() || 'index.html';
     const linkFile = (href === '' || href === '/') ? 'index.html' : href;
-    
+
     if (currentFile === linkFile) {
       link.classList.add('active');
     } else {
@@ -178,7 +189,7 @@ if (contactForm) {
 
 // Portfolio Filter
 document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
+  btn.addEventListener('click', function () {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     this.classList.add('active');
     const filter = this.getAttribute('data-filter');
